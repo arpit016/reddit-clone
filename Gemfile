@@ -21,6 +21,8 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'simple_form'
+gem 'acts_as_votable', '~> 0.10.0'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'devise'
 # bundle exec rake doc:rails generates the API under doc/api.
