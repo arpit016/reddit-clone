@@ -3,7 +3,7 @@
     %a{:href => "#{@link.url}"}= @link.title
     %br/
     %small
-      Submitted by #{@link.user.name}
+      Submitted by #{@link.user.email}
 .btn-group
   = link_to 'Visit URL', @link.url, class: "btn btn-primary"
 .btn-group.pull-right
@@ -24,8 +24,8 @@
   Comments
 #comments
   = render :partial => @link.comments
-= simple_form_for [@link, Comment.new]  do |f|
+= simple_form_for [@link, @link.comments.build]  do |f|
   .field
-    = f.text_area :body, class: "form-control"
+    = f.text_area :bosy, class: "form-control"
   %br/
   = f.submit "Add Comment", class: "btn btn-primary"
